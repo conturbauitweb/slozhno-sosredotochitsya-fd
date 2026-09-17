@@ -278,6 +278,10 @@ html.theme-light .decoration-text {
   border-bottom: 1px solid var(--link-border-color);
 }
 
+.card__text__link:focus {
+  outline: none;
+}
+
 .card__text__link:focus-visible {
   outline: 1px solid var(--link-border-color);
 }
