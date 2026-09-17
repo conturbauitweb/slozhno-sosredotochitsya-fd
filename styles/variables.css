@@ -13,9 +13,11 @@
   --pj-name-font-weight: bold;
   --pj-name-color: #db00ff;
   --shadow-color: #ff0070;
+  --shadow-color-alt: #ff0070;
   --decoration-color: #ff0070;
   --decoration-text-line-height: 1.563rem;
   --decoration-line-height: 1.125rem;
   --nav-bg-color: transparent;
   --nav-border-color: #ff0070;
+  --link-border-color: #f1b2ce;
 }
