@@ -23,6 +23,8 @@
   .header {
     min-height: 48rem;
     padding: 1.25rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
   }
 }
 
@@ -121,12 +123,18 @@ html.theme-light .decoration-text {
   gap: 0.625em;
 }
 
+@media (width >= 768px) {
+  .header__theme-menu {
+    grid-row: 2;
+    align-self: start;
+  }
+}
+
 @media (width >= 1024px) {
   .header__theme-menu {
     grid-column: 3 / 5;
     grid-row: 1;
     justify-self: center;
-    align-self: start;
   }
   .header__theme-menu-list {
     flex-direction: row;
@@ -179,12 +187,12 @@ html.theme-light .decoration-text {
 @media (width >= 768px) {
   .header__project-name {
     margin-left: -1.25rem;
+    grid-row: 3 / 5;
   }
 }
 
 @media (width >= 1024px) {
   .header__project-name {
-    grid-column: 1 / 7;
     grid-row: 2 / 4;
   }
 }
@@ -219,7 +227,7 @@ html.theme-light .decoration-text {
 @media (width >= 768px) {
   .header__title {
     grid-column: 4 / 7;
-    grid-row: 4;
+    grid-row: 5;
     align-self: end;
   }
 }
@@ -227,6 +235,7 @@ html.theme-light .decoration-text {
 @media (width >= 1024px) {
   .header__title {
     align-self: start;
+    grid-row: 4;
   }
 }
 
