@@ -26,4 +26,23 @@
     --nav-border-color: #353430;
     --link-border-color: #353430;
   }
+  html.theme-auto .decoration-text {
+    display: none;
+  }
+}
+
+html.theme-light .decoration-text {
+  display: none;
+}
+
+@media (width > 768px) {
+  html.theme-light .footer__project-name {
+    text-shadow: 2px 2px var(--shadow-color-alt);
+  }
+}
+
+@media (width > 768px) and (prefers-color-scheme: light) {
+  html.theme-auto .footer__project-name {
+    text-shadow: 2px 2px var(--shadow-color-alt);
+  }
 }

@@ -21,3 +21,9 @@
   --nav-border-color: #ff0070;
   --link-border-color: #f1b2ce;
 }
+
+@media (width >= 768px) {
+  :root {
+    --pj-name-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
